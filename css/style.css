@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*font-family: "Patrick Hand", cursive;*/
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(66, 190, 137);
+  background: linear-gradient(0deg, rgb(94, 222, 138) 0%, rgb(10, 51, 34) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+#bg {
+  width: 100vW;
+}
+
+.fullscreen-bg {
+  position: absolute;
+  background-position: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+img {
+  pointer-events: none;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    /* background: url('img/test.png') center center / cover no-repeat; */
+  }
+  .fullscreen-bg__video {
+    /* display: none; */
+  }
+}
+#logo {
+  width: 300px;
+}
+
+.intro {
+  font-family: "Patrick Hand", cursive;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.intro h2 {
+  color: #c7c7c7;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 30px;
+}
+
+.social-head {
+  font-family: "Patrick Hand", cursive;
+  margin-bottom: 20px;
+}
+
+.intro h2:hover {
+  transition-duration: 2s;
+  color: #0a3322;
+}
+
+.social {
+  padding-top: 2%;
+  color: #c7c7c7;
+  font-size: 40px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  color: #c7c7c7;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  transition-duration: 1s;
+  color: #0a3322;
+}
+
+@media only screen and (min-width: 767px) {
+  #logo {
+    /* width: 500px; */
+  }
+  .text h2 {
+    /* font-size: 50px; */
+  }
+  #bg {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #logo {
+    width: 300px;
+  }
+  .text h2 {
+    font-size: 70px;
+  }
+  #bg {
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
