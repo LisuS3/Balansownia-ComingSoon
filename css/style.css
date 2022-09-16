@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  /*margin: 0;*/
+  /*padding: 0;*/
   /*font-family: "Patrick Hand", cursive;*/
   box-sizing: border-box;
 }
@@ -18,51 +18,6 @@ body {
   padding: 30px;
 }
 
-#bg {
-  width: 100vW;
-}
-
-.fullscreen-bg {
-  position: absolute;
-  background-position: center;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -100;
-}
-
-img {
-  pointer-events: none;
-}
-
-.fullscreen-bg__video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: auto;
-  height: auto;
-  min-width: 100%;
-  min-height: 100%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-@media (max-width: 767px) {
-  .fullscreen-bg {
-    /* background: url('img/test.png') center center / cover no-repeat; */
-  }
-  .fullscreen-bg__video {
-    /* display: none; */
-  }
-}
-#logo {
-  width: 300px;
-}
-
 .intro {
   font-family: "Patrick Hand", cursive;
   text-align: center;
@@ -78,8 +33,8 @@ img {
 }
 
 .social-head {
+  padding: 0;
   font-family: "Patrick Hand", cursive;
-  margin-bottom: 20px;
 }
 
 .intro h2:hover {
@@ -88,45 +43,35 @@ img {
 }
 
 .social {
-  padding-top: 2%;
+  margin: 0;
+  padding: 0;
   color: #c7c7c7;
   font-size: 40px;
 }
 
-ul {
+.social ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-li {
+.social ul li {
   float: left;
 }
 
-li a {
+.social ul li a {
   color: #c7c7c7;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover {
+.social li a:hover {
   transition-duration: 1s;
   color: #0a3322;
 }
 
-@media only screen and (min-width: 767px) {
-  #logo {
-    /* width: 500px; */
-  }
-  .text h2 {
-    /* font-size: 50px; */
-  }
-  #bg {
-    height: 100%;
-  }
-}
 @media only screen and (min-width: 1200px) {
   #logo {
     width: 300px;
